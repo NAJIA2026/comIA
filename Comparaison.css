@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f7fb;
+}
+
+/* Navbar */
+
+header {
+    background: #0b1f4d;
+    padding: 15px 40px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 45px;
+    margin-right: 10px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 25px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    color: #4dd0e1;
+}
+
+/* Section */
+
+.comparaison {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.comparaison h1 {
+    text-align: center;
+    color: #0b1f4d;
+    font-size: 40px;
+}
+
+.comparaison p {
+    text-align: center;
+    color: #000000;
+    margin: 15px 0 35px;
+}
+
+/* Box */
+
+.box {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    margin-bottom: 35px;
+}
+
+.box h2 {
+    color: #0b1f4d;
+    margin-bottom: 20px;
+}
+
+/* Images */
+
+.table-img,
+.graph-img {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+}
+
+/* Cards */
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 31%;
+    background: #f88c8c;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #ff0909;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 15px;
+    color: #000000;
+}
+
+/* Responsive */
+
+@media(max-width:900px) {
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        margin-top: 15px;
+    }
+
+}

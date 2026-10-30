@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f7fb;
+}
+
+/* ================= NAVBAR ================= */
+
+header {
+    background: #0b1f4d;
+    padding: 15px 40px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 45px;
+    margin-right: 10px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin-left: 25px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    transition: .3s;
+}
+
+.menu li a:hover,
+.menu li a.active {
+    color: #fafafa;
+}
+
+/* ================= SECTION ================= */
+
+.classement {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.classement h1 {
+    text-align: center;
+    color: #0b1f4d;
+    font-size: 42px;
+}
+
+.classement h1 i {
+    color: #FFD700;
+    margin-right: 10px;
+}
+
+.classement p {
+    text-align: center;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+/* ================= CARDS ================= */
+
+.ranking {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 31%;
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .12);
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.medal {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    color: #0b1f4d;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: #f71111;
+    margin-bottom: 15px;
+}
+
+/* ================= COLORS ================= */
+
+.first {
+    border-top: 8px solid gold;
+}
+
+.second {
+    border-top: 8px solid rgb(150, 209, 233);
+}
+
+.third {
+    border-top: 8px solid #cd7f32;
+}
+
+/* ================= CONCLUSION ================= */
+
+.conclusion {
+    margin-top: 40px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+}
+
+.conclusion h2 {
+    color: #0b1f4d;
+    margin-bottom: 20px;
+}
+
+.conclusion h2 i {
+    color: green;
+    margin-right: 8px;
+}
+
+.conclusion p {
+    text-align: justify;
+    line-height: 1.8;
+    color: #000000;
+}
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .menu {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu li {
+        margin: 10px;
+    }
+
+    .ranking {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+}
